@@ -1,0 +1,6 @@
+- [ ] Upload `<%= @project_name %>` to RubyGems (TODO command?)
+- [ ] Scrub git repo (TODO put command to merge commits into "initial commit")
+- [ ] Upload git repo to Github (TODO link to "create new repo")
+- [ ] Write a quick blog post
+- [ ] Post link to HN (TODO link to thing)
+- [ ] Post link to lobste.rs

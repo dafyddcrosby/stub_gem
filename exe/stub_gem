@@ -1,0 +1,21 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+require "stub_gem"
+
+def fail_usage(msg)
+  errormsg = <<~MSG
+    ERROR #{msg}
+    stub_gem
+    Usage:
+      stub_gem $PROJECT_NAME
+  MSG
+  abort errormsg
+end
+
+# TODO: use OptionParser or something nice like that
+proj_name = ARGV[0]
+fail_usage "Need a project name before proceeding" unless proj_name
+puts "* Project name: #{proj_name}"
+
+StubGem::RubyProject.new proj_name, "#{Dir.home}/src/#{proj_name}"
