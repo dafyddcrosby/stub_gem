@@ -57,6 +57,7 @@ module StubGem
     def stub_project_docs
       # TODO: stub_contributors
       %w[
+        CODE_OF_CONDUCT.md
         README.md
         TODO.md
         LICENSE
