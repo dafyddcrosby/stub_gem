@@ -122,7 +122,7 @@ module StubGem
       # TODO stub_github_project_templates
     end
 
-    def stub_single_file(name, dir=nil, desired_name=nil)
+    def stub_single_file(name, dir = nil, desired_name = nil)
       template = ERB.new(File.read(File.join(@template_dir, name)))
       desired_name ||= name
       filepath = "#{@base_path}/"
